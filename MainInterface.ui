@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainInterfaceClass</class>
+ <widget class="QMainWindow" name="MainInterfaceClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2400</width>
+    <height>1603</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainInterface</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QDockWidget" name="LeftDockUp">
+          <property name="minimumSize">
+           <size>
+            <width>500</width>
+            <height>1000</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>100000</height>
+           </size>
+          </property>
+          <property name="floating">
+           <bool>false</bool>
+          </property>
+          <widget class="QWidget" name="dockWidgetContents_8"/>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDockWidget" name="LeftDockDown">
+          <property name="minimumSize">
+           <size>
+            <width>500</width>
+            <height>38</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>100000</height>
+           </size>
+          </property>
+          <property name="floating">
+           <bool>false</bool>
+          </property>
+          <widget class="QWidget" name="dockWidgetContents_10"/>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>982</width>
+           <height>1525</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDockWidget" name="RightDock">
+        <property name="minimumSize">
+         <size>
+          <width>400</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>400</width>
+          <height>524287</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="floating">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents_16"/>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2400</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>  文件  </string>
+    </property>
+    <addaction name="openVectorFileAct"/>
+    <addaction name="openRasterFileAct"/>
+    <addaction name="openProjectFileAct"/>
+    <addaction name="saveFileAct"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>  视图  </string>
+    </property>
+    <addaction name="openLayerTreeAct"/>
+    <addaction name="openEagleEyeAct"/>
+    <addaction name="openToolBoxAct"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>  符号与色表  </string>
+    </property>
+    <addaction name="symbolAct"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>  矢量编辑  </string>
+    </property>
+    <addaction name="addPointAct"/>
+    <addaction name="smoothGeometryAct"/>
+    <addaction name="extentLineAct"/>
+    <addaction name="rotateLineAct"/>
+    <addaction name="simplifyLineAct"/>
+    <addaction name="faceMergeAct"/>
+    <addaction name="divideSurfaceAct"/>
+    <addaction name="extractBoundaryAct"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>  空间分析  </string>
+    </property>
+    <addaction name="bufferAnalysisAct"/>
+    <addaction name="rasterizeAct"/>
+    <addaction name="vectorTailorAct"/>
+    <addaction name="csvToVectorAct"/>
+    <addaction name="rasterCalculatorAct"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="openVectorFileAct"/>
+   <addaction name="openRasterFileAct"/>
+   <addaction name="openProjectFileAct"/>
+   <addaction name="saveFileAct"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="symbolAct"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="bufferAnalysisAct"/>
+   <addaction name="rasterizeAct"/>
+   <addaction name="vectorTailorAct"/>
+   <addaction name="rasterCalculatorAct"/>
+   <addaction name="csvToVectorAct"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="startEditingAct"/>
+   <addaction name="selectFeatureAct"/>
+   <addaction name="copyFeatureAct"/>
+   <addaction name="moveFeatureAct"/>
+   <addaction name="viewAttributeAct"/>
+   <addaction name="deleteFeatureAct"/>
+   <addaction name="exitAct"/>
+   <addaction name="undoAct"/>
+   <addaction name="redoAct"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="resetAct"/>
+   <addaction name="fullScreenAct"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="setCrsAct"/>
+  </widget>
+  <action name="openVectorFileAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/openVector.png</normaloff>:/MainInterface/res/openVector.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开矢量文件</string>
+   </property>
+  </action>
+  <action name="openRasterFileAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/openRaster.png</normaloff>:/MainInterface/res/openRaster.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开栅格文件</string>
+   </property>
+  </action>
+  <action name="openProjectFileAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/openProject.png</normaloff>:/MainInterface/res/openProject.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开工程文件</string>
+   </property>
+  </action>
+  <action name="saveFileAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/saveFile.png</normaloff>:/MainInterface/res/saveFile.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存文件</string>
+   </property>
+  </action>
+  <action name="openLayerTreeAct">
+   <property name="text">
+    <string>图层管理器</string>
+   </property>
+  </action>
+  <action name="openEagleEyeAct">
+   <property name="text">
+    <string>鹰眼图</string>
+   </property>
+  </action>
+  <action name="openToolBoxAct">
+   <property name="text">
+    <string>工具箱</string>
+   </property>
+  </action>
+  <action name="fullScreenAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/fullScreen.png</normaloff>:/MainInterface/res/fullScreen.png</iconset>
+   </property>
+   <property name="text">
+    <string>全屏显示</string>
+   </property>
+  </action>
+  <action name="rasterizeAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/rasterize.png</normaloff>:/MainInterface/res/rasterize.png</iconset>
+   </property>
+   <property name="text">
+    <string>矢量转栅格</string>
+   </property>
+   <property name="toolTip">
+    <string>矢量转栅格</string>
+   </property>
+  </action>
+  <action name="showAttributeAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/attributeEditing.png</normaloff>:/MainInterface/res/attributeEditing.png</iconset>
+   </property>
+   <property name="text">
+    <string>查看属性表</string>
+   </property>
+  </action>
+  <action name="bufferAnalysisAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/bufferAnalysis.png</normaloff>:/MainInterface/res/bufferAnalysis.png</iconset>
+   </property>
+   <property name="text">
+    <string>矢量缓冲区分析</string>
+   </property>
+  </action>
+  <action name="showFieldAct">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/MainInterface/res/fieldEditing.png</normaloff>:/MainInterface/res/fieldEditing.png</iconset>
+   </property>
+   <property name="text">
+    <string>查看字段</string>
+   </property>
+  </action>
+  <action name="csvToVectorAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/excelToVector.png</normaloff>:/MainInterface/res/excelToVector.png</iconset>
+   </property>
+   <property name="text">
+    <string>表格转矢量</string>
+   </property>
+  </action>
+  <action name="addPointAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/point.png</normaloff>:/MainInterface/res/point.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加点</string>
+   </property>
+  </action>
+  <action name="vectorTailorAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/vectorTailor.png</normaloff>:/MainInterface/res/vectorTailor.png</iconset>
+   </property>
+   <property name="text">
+    <string>矢量裁剪分析</string>
+   </property>
+  </action>
+  <action name="rasterCalculatorAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/rasterCalculator.png</normaloff>:/MainInterface/res/rasterCalculator.png</iconset>
+   </property>
+   <property name="text">
+    <string>栅格计算器</string>
+   </property>
+  </action>
+  <action name="selectFeatureAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/selectFea.png</normaloff>:/MainInterface/res/selectFea.png</iconset>
+   </property>
+   <property name="text">
+    <string>选择要素</string>
+   </property>
+  </action>
+  <action name="deleteFeatureAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/deleteFea.png</normaloff>:/MainInterface/res/deleteFea.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除要素</string>
+   </property>
+  </action>
+  <action name="copyFeatureAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/copyFea.png</normaloff>:/MainInterface/res/copyFea.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制要素</string>
+   </property>
+  </action>
+  <action name="moveFeatureAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/moveFea.png</normaloff>:/MainInterface/res/moveFea.png</iconset>
+   </property>
+   <property name="text">
+    <string>移动要素</string>
+   </property>
+  </action>
+  <action name="faceMergeAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/surface.png</normaloff>:/MainInterface/res/surface.png</iconset>
+   </property>
+   <property name="text">
+    <string>合并面</string>
+   </property>
+  </action>
+  <action name="textLabelAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/point.png</normaloff>:/MainInterface/res/point.png</iconset>
+   </property>
+   <property name="text">
+    <string>输入注记</string>
+   </property>
+  </action>
+  <action name="smoothGeometryAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/bufferAnalysis.png</normaloff>:/MainInterface/res/bufferAnalysis.png</iconset>
+   </property>
+   <property name="text">
+    <string>光滑线</string>
+   </property>
+  </action>
+  <action name="exitAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/exit.png</normaloff>:/MainInterface/res/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>结束操作</string>
+   </property>
+  </action>
+  <action name="undoAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/undo.png</normaloff>:/MainInterface/res/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="redoAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/redo.png</normaloff>:/MainInterface/res/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>重做</string>
+   </property>
+  </action>
+  <action name="symbolAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/symbol.png</normaloff>:/MainInterface/res/symbol.png</iconset>
+   </property>
+   <property name="text">
+    <string>符号管理器</string>
+   </property>
+  </action>
+  <action name="resetAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/reset.png</normaloff>:/MainInterface/res/reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>复位</string>
+   </property>
+  </action>
+  <action name="startEditingAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/startEdit.png</normaloff>:/MainInterface/res/startEdit.png</iconset>
+   </property>
+   <property name="text">
+    <string>开始编辑</string>
+   </property>
+  </action>
+  <action name="extentLineAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/bufferAnalysis.png</normaloff>:/MainInterface/res/bufferAnalysis.png</iconset>
+   </property>
+   <property name="text">
+    <string>延长线</string>
+   </property>
+  </action>
+  <action name="rotateLineAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/bufferAnalysis.png</normaloff>:/MainInterface/res/bufferAnalysis.png</iconset>
+   </property>
+   <property name="text">
+    <string>旋转线</string>
+   </property>
+  </action>
+  <action name="divideSurfaceAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/surface.png</normaloff>:/MainInterface/res/surface.png</iconset>
+   </property>
+   <property name="text">
+    <string>分割面</string>
+   </property>
+  </action>
+  <action name="viewAttributeAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/attributeEditing.png</normaloff>:/MainInterface/res/attributeEditing.png</iconset>
+   </property>
+   <property name="text">
+    <string>查看属性</string>
+   </property>
+  </action>
+  <action name="simplifyLineAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/bufferAnalysis.png</normaloff>:/MainInterface/res/bufferAnalysis.png</iconset>
+   </property>
+   <property name="text">
+    <string>简化线</string>
+   </property>
+  </action>
+  <action name="extractBoundaryAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/surface.png</normaloff>:/MainInterface/res/surface.png</iconset>
+   </property>
+   <property name="text">
+    <string>边界提取</string>
+   </property>
+  </action>
+  <action name="setCrsAct">
+   <property name="icon">
+    <iconset resource="MainInterface.qrc">
+     <normaloff>:/MainInterface/res/crs.png</normaloff>:/MainInterface/res/crs.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置坐标系</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="MainInterface.qrc"/>
+ </resources>
+ <connections/>
+</ui>
