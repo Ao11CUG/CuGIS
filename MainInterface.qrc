@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/MainInterface">
+        <file>res/fullScreen.png</file>
+        <file>res/openProject.png</file>
+        <file>res/openRaster.png</file>
+        <file>res/openVector.png</file>
+        <file>res/saveFile.png</file>
+        <file>res/bufferAnalysis.png</file>
+        <file>res/rasterize.png</file>
+        <file>res/rasterCalculator.png</file>
+        <file>res/vectorTailor.png</file>
+        <file>res/line.png</file>
+        <file>res/point.png</file>
+        <file>res/surface.png</file>
+        <file>res/attributeEditing.png</file>
+        <file>res/excelToVector.png</file>
+        <file>res/newFile.png</file>
+        <file>res/openFile.png</file>
+        <file>res/startEdit.png</file>
+        <file>res/copyFea.png</file>
+        <file>res/deleteFea.png</file>
+        <file>res/moveFea.png</file>
+        <file>res/selectFea.png</file>
+        <file>res/exit.png</file>
+        <file>res/redo.png</file>
+        <file>res/undo.png</file>
+        <file>res/reset.png</file>
+        <file>res/symbol.png</file>
+        <file>res/cug.png</file>
+        <file>res/cug.ico</file>
+        <file>res/crs.png</file>
+    </qresource>
+</RCC>
